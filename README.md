@@ -16,7 +16,11 @@ In order to obatain the network topology I used [OpenStreetMap](https://www.open
 
 In this topologiy each edge represent a road and each node is represented by either an intersection ar a cul-de-sac. Information difussion is modelled by assigning different weights to each node by it's importance (with higher weights asigned to more central nodes - e.g. trasnportation hubs, city center, markets)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Modelling the transmision
+
+For modelling the disease diffusion I will use SEIR model. As a short introductio, SEIR model is a compartmental model for modeling how a disease spreads through a population. It’s an acronym for Susceptible, Exposed, Infected, Recovered. This model is extending the SIR model by adding "Exposed" state as being a period during which the individual has been infected but is not yet infectious themselves
+
+<img src="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#/media/File:SEIR.PNG" class="img-responsive" alt="">
 
 ```markdown
 Syntax highlighted code block

@@ -39,8 +39,11 @@ Luckily, paramteres for SEIR model were already estimated in a [recent study by 
 
 # Running simulation
 
+Running the model with a **high contact rate** will result in a very short period of time in a massive infection. **At peack time (around day 20-25) more than 70% of the population will be infected**. The prevalence plot captures the variation (delta) of nodes for each status in consecutive iterations, also showing a high standard deviation from day-to-day evolution
+
 <p float="left">
   <img src="SEIR without Social Distancing.PNG" width="300" />
   <img src="SEIR prevalence withou Social Distancing.PNG" width="300" /> 
 </p>
 
+### Implementing social distancing

@@ -32,3 +32,5 @@ Luckily, paramteres for SEIR model were already estimated in a [recent study by 
   * R0 = 3.5
   * γ = 0.5
   * β = 1.75
+
+# Running simulation

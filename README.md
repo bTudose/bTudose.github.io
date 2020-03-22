@@ -35,7 +35,6 @@ Luckily, paramteres for SEIR model were already estimated in a [recent study by 
   * α = 0.2 (Median incubation period is 5 days)
   * R0 = 3.5
   * γ = 0.5
-  * β = 1.75
 
 # Running simulation
 
@@ -48,7 +47,16 @@ Running the model with a **high contact rate** will result in a very short perio
 
 ### Implementing social distancing
 
+From a network topology perspective, social distancing is created by altering some of the meaningful metrics:
+ * [Katz centrality](https://en.wikipedia.org/wiki/Katz_centrality)
+ * [Closeness centrality] (https://en.wikipedia.org/wiki/Closeness_centrality)
+ * removing several attractor nodes
+
+In SEIR model, social distancing can be enforced by varying contact rate β(t).
+
 <p float="left">
   <img src="SEIR with social distance.PNG" width="300" />
   <img src="SEIR prevalence with social distance.PNG" width="300" /> 
 </p>
+
+Above result shows that **reducing urban mobility by 66% percent, the peek of the epidemics will happen about 10 days earlier (days 10-15) and only 40% of the population will be infected at peak time.**

@@ -1,4 +1,4 @@
-## Simulating spreading of Coronavirus in a town with Python
+# Simulating spreading of Coronavirus in a town with Python
 
 This post attepmts to model the spreading of novel SARS-CoV-2 into a small Romanian town (Slatina, Olt County) by appling different [comportamental model in epidemiology.](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology)
 
@@ -8,7 +8,7 @@ The analysis was made using Python and open source libaries (detailed below). **
 
 ### !!Disclaimer!! This is not a medical article. Analysis is made entirely using statistical and probabilistic modelling and may not reflect the truly evolution of the disease. 
 
-# Fetching the network
+## Fetching the network
 
 In order to obatain the network topology I used [OpenStreetMap](https://www.openstreetmap.org/#map=7/45.996/24.981) together with opensource library [osmnx](https://github.com/gboeing/osmnx). 
 
@@ -18,7 +18,7 @@ In this topology each edge represent a road and each node is represented by eith
 
 After this operation, the output will be a [networkx object](https://networkx.github.io/documentation/stable/tutorial.html#creating-a-graph) which can be further converted into Shapefile or GraphML files to implement other GIS analysis.
 
-# Modelling the transmision
+## Modelling the transmision
 
 For network diffusion analysis [NDlib opensource library](https://ndlib.readthedocs.io/en/latest/overview.html) will be used. 
 
@@ -36,7 +36,7 @@ Luckily, paramteres for SEIR model were already estimated in a [recent study by 
   * R0 = 3.5
   * γ = 0.5
 
-# Running simulation
+## Running simulation
 
 Running the model with a **high contact rate** will result in a very short period of time in a massive infection. **At peack time (around day 20-25) more than 70% of the population will be infected**. The prevalence plot captures the variation (delta) of nodes for each status in consecutive iterations, also showing a high standard deviation from day-to-day evolution
 
@@ -49,7 +49,7 @@ Running the model with a **high contact rate** will result in a very short perio
 
 From a network topology perspective, social distancing is created by altering some of the meaningful metrics:
  * [Katz centrality](https://en.wikipedia.org/wiki/Katz_centrality)
- * [Closeness centrality] (https://en.wikipedia.org/wiki/Closeness_centrality)
+ * [Closeness centrality](https://en.wikipedia.org/wiki/Closeness_centrality)
  * removing several attractor nodes
 
 In SEIR model, social distancing can be enforced by varying contact rate β(t).
@@ -60,3 +60,13 @@ In SEIR model, social distancing can be enforced by varying contact rate β(t).
 </p>
 
 Above result shows that **reducing urban mobility by 66% percent, the peek of the epidemics will happen about 10 days earlier (days 10-15) and only 40% of the population will be infected at peak time.**
+
+## Future work
+
+Because SARS-CoV-2 is a virus which seems to stronger affect eldery population, in the future the model will be update to beter emphasise this aspect by using [aged structured models](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_influence_of_age:_age-structured_models).
+
+# TL;DR
+
+### Simulation result for a small network representing Slatina, Romania, shows that social distancing will dramatically diminish the effects of Coronavirus over the population
+
+### Thank you for reading till the end !

@@ -47,3 +47,8 @@ Running the model with a **high contact rate** will result in a very short perio
 </p>
 
 ### Implementing social distancing
+
+<p float="left">
+  <img src="SEIR with social distance.PNG" width="300" />
+  <img src="SEIR prevalence with social distance.PNG" width="300" /> 
+</p>

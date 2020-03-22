@@ -8,6 +8,11 @@ The analysis was made using Python and open source libaries (detailed below)
 
 ### !!Disclaimer!! This is not a medical article. Analysis is made entirely using statisticall modelling and may not reflect the truly evolution of the disease
 
+# Fetching the network
+
+<img src="slatinaGraph.png" alt="hi" class="inline"/>
+
+
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown

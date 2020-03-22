@@ -10,8 +10,7 @@ The analysis was made using Python and open source libaries (detailed below)
 
 # Fetching the network
 
-<img src="slatinaGraph.png" alt="hi" class="inline"/>
-
+[Graph representation of Slatina](https://github.com/bTudose/bTudose.github.io/blob/master/slatinaGraph.PNG)
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 

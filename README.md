@@ -4,7 +4,7 @@ This post attepmts to model the spreading of novel SARS-CoV-2 into a small Roman
 
 Due to [small world network](https://en.wikipedia.org/wiki/Small-world_network) effect, where a signfiant part of network elements are neighbors of one another, spreading of a disease can happen faster in small to medium communites. This post is entirely based on [network-based diffusion analysis](https://en.wikipedia.org/wiki/Network-based_diffusion_analysis) which is a quantifier for transmision / diffusion of a behaviour into a social network.  
 
-The analysis was made using Python and open source libaries (detailed below)
+The analysis was made using Python and open source libaries (detailed below). **The post is aimed to show benefits of social distancing (from a statistical point of view)**
 
 ### !!Disclaimer!! This is not a medical article. Analysis is made entirely using statistical and probabilistic modelling and may not reflect the truly evolution of the disease.
 
@@ -21,5 +21,8 @@ In this topologiy each edge represent a road and each node is represented by eit
 For modelling the disease diffusion I will use SEIR model. As a short introductio, SEIR model is a compartmental model for modeling how a disease spreads through a population. It’s an acronym for Susceptible, Exposed, Infected, Recovered. This model is extending the SIR model by adding "Exposed" state as being a period during which the individual has been infected but is not yet infectious themselves
 
 <img src="SEIR.png" class="img-responsive" alt="">
-![SEIR model](model.svg)
+
+SEIR model 
+
+### SEIR model:
 <img src="model.svg"">

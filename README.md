@@ -1,9 +1,6 @@
-TEST
-## Welcome to GitHub Pages
+## Simulating spreading of Coronavirus in a town with Python
 
-You can use the [editor on GitHub](https://github.com/bTudose/bTudose.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This article attepmts to model the spreading of novel SARS-CoV-2 into a small Romanian town (Slatina, Olt County) by appling diffrent [Comportamental model in epidemiology](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology)
 
 ### Markdown
 

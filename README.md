@@ -1,6 +1,6 @@
 # Simulating spreading of Coronavirus in a town with Python
 
-This post attepmts to model the spreading of novel SARS-CoV-2 into a small Romanian town ([Slatina, Olt County](https://en.wikipedia.org/wiki/Slatina,_Romania) by applying different [comportamental model in epidemiology.](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology)
+This post attepmts to model the spreading of novel SARS-CoV-2 into a small Romanian town ([Slatina, Olt County](https://en.wikipedia.org/wiki/Slatina,_Romania)) by applying different [comportamental model in epidemiology.](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology)
 
 Due to [small world network](https://en.wikipedia.org/wiki/Small-world_network) effect, where a signfiant part of the network elements are neighbors of one another, spreading of a disease can happen faster in small to medium communites. This post is entirely based on [network-based diffusion analysis](https://en.wikipedia.org/wiki/Network-based_diffusion_analysis) which is a quantifier for transmision / diffusion of a behaviour into a social network.  
 

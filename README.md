@@ -1,20 +1,20 @@
 ## Simulating spreading of Coronavirus in a town with Python
 
-This post attepmts to model the spreading of novel SARS-CoV-2 into a small Romanian town (Slatina, Olt County) by appling diffrent [Comportamental model in epidemiology.](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology)
+This post attepmts to model the spreading of novel SARS-CoV-2 into a small Romanian town (Slatina, Olt County) by appling different [comportamental model in epidemiology.](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology)
 
-Due to [small world network](https://en.wikipedia.org/wiki/Small-world_network) effect, where a signfiant part of network elements are neighbors of one another, spreading of a disease can happen faster in small to medium communites. This post is entirely based on [network-based diffusion analysis](https://en.wikipedia.org/wiki/Network-based_diffusion_analysis) which is a quintifier for transmision / diffusion of a behaviour into a social network.  
+Due to [small world network](https://en.wikipedia.org/wiki/Small-world_network) effect, where a signfiant part of network elements are neighbors of one another, spreading of a disease can happen faster in small to medium communites. This post is entirely based on [network-based diffusion analysis](https://en.wikipedia.org/wiki/Network-based_diffusion_analysis) which is a quantifier for transmision / diffusion of a behaviour into a social network.  
 
 The analysis was made using Python and open source libaries (detailed below)
 
-### !!Disclaimer!! This is not a medical article. Analysis is made entirely using statisticall modelling and may not reflect the truly evolution of the disease
+### !!Disclaimer!! This is not a medical article. Analysis is made entirely using statistical and probabilistic modelling and may not reflect the truly evolution of the disease.
 
 # Fetching the network
 
-In order to obatain the network topology I used [OpenStreetMap](https://www.openstreetmap.org/#map=7/45.996/24.981) together with opensource library [osmnx](https://github.com/gboeing/osmnx).
-
+In order to obatain the network topology I used [OpenStreetMap](https://www.openstreetmap.org/#map=7/45.996/24.981) together with opensource library [osmnx](https://github.com/gboeing/osmnx). 
 
 <img src="slatinaGraph.PNG" class="img-responsive" alt="">
 
+In this topologiy each edge represent a road and each node is represented by either an intersection ar a cul-de-sac. Information difussion is modelled by assigning different weights to each node by it's importance (with higher weights asigned to more central nodes - e.g. trasnportation hubs, city center, markets)
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 

@@ -10,7 +10,11 @@ The analysis was made using Python and open source libaries (detailed below)
 
 # Fetching the network
 
-[Graph representation of Slatina](https://github.com/bTudose/bTudose.github.io/blob/master/slatinaGraph.PNG)
+In order to obatain the network topology I used [OpenStreetMap](https://www.openstreetmap.org/#map=7/45.996/24.981) together with opensource library [osmnx](https://github.com/gboeing/osmnx).
+
+
+<img src="slatinaGraph.PNG" class="img-responsive" alt="">
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 

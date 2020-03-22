@@ -20,4 +20,6 @@ In this topologiy each edge represent a road and each node is represented by eit
 
 For modelling the disease diffusion I will use SEIR model. As a short introductio, SEIR model is a compartmental model for modeling how a disease spreads through a population. It’s an acronym for Susceptible, Exposed, Infected, Recovered. This model is extending the SIR model by adding "Exposed" state as being a period during which the individual has been infected but is not yet infectious themselves
 
-<img src="SEIR.PNG" class="img-responsive" alt="">
+<img src="SEIR.png" class="img-responsive" alt="">
+![SEIR model](model.svg)
+<img src="model.svg"">

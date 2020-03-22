@@ -6,7 +6,7 @@ Due to [small world network](https://en.wikipedia.org/wiki/Small-world_network) 
 
 The analysis was made using Python and open source libaries (detailed below). **The post is aimed to show benefits of social distancing (from a statistical point of view)**
 
-### !!Disclaimer!! This is not a medical article. Analysis is made entirely using statistical and probabilistic modelling and may not reflect the truly evolution of the disease.
+### !!Disclaimer!! This is not a medical article. Analysis is made entirely using statistical and probabilistic modelling and may not reflect the truly evolution of the disease. 
 
 # Fetching the network
 
@@ -14,11 +14,15 @@ In order to obatain the network topology I used [OpenStreetMap](https://www.open
 
 <img src="slatinaGraph.PNG" class="img-responsive" alt="">
 
-In this topologiy each edge represent a road and each node is represented by either an intersection ar a cul-de-sac. Information difussion is modelled by assigning different weights to each node by it's importance (with higher weights asigned to more central nodes - e.g. trasnportation hubs, city center, markets)
+In this topology each edge represent a road and each node is represented by either an intersection ar a cul-de-sac. Information difussion is modelled by assigning different weights to each node by it's importance (with higher weights asigned to more central nodes - e.g. trasnportation hubs, city center, markets). 
+
+After this operation, the output will be a [networkx object](https://networkx.github.io/documentation/stable/tutorial.html#creating-a-graph) which can be further converted into Shapefile or GraphML files to implement other GIS analysis.
 
 # Modelling the transmision
 
-For modelling the disease diffusion I will use SEIR model. As a short introductio, SEIR model is a compartmental model for modeling how a disease spreads through a population. It’s an acronym for Susceptible, Exposed, Infected, Recovered. This model is extending the SIR model by adding "Exposed" state as being a period during which the individual has been infected but is not yet infectious themselves
+For network diffusion analysis [NDlib opensource library](https://ndlib.readthedocs.io/en/latest/overview.html) will be used. 
+
+For modelling the disease diffusion I will use SEIR model. As a short introduction, SEIR model is a compartmental model which show how a disease spreads through a population. It’s an acronym for Susceptible, Exposed, Infected, Recovered. This model is extending the SIR model by adding "Exposed" state as being a period during which the individual has been infected but is not yet infectious themselves
 
 <img src="SEIR.png" class="img-responsive" alt="">
 
@@ -34,3 +38,5 @@ Luckily, paramteres for SEIR model were already estimated in a [recent study by 
   * β = 1.75
 
 # Running simulation
+
+<img src="SEIR without Social Distancing.PNG" class="img-responsive" alt="">

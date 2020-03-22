@@ -28,7 +28,7 @@ SEIR model was succesfully aplied in modelling transmision of SARS virus during 
 <img src="model.svg">
 
 Luckily, paramteres for SEIR model were already estimated in a [recent study by Hellewell et al. 2020](https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(20)30074-7/fulltext):
-  1.  α = 0.2 (Median incubation period is 5 days)
-  2.  R0 = 3.5
-  3.  γ = 0.5
-  4.  β = 1.75
+  * α = 0.2 (Median incubation period is 5 days)
+  * R0 = 3.5
+  * γ = 0.5
+  * β = 1.75

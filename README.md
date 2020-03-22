@@ -1,4 +1,4 @@
-# Simulating spreading of Coronavirus in a town with Python
+# Simulating spreading of Coronavirus in a town using Python
 
 This post attepmts to model the spreading of novel SARS-CoV-2 into a small Romanian town ([Slatina, Olt County](https://en.wikipedia.org/wiki/Slatina,_Romania)) by applying different [comportamental model in epidemiology.](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology)
 

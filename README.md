@@ -39,5 +39,8 @@ Luckily, paramteres for SEIR model were already estimated in a [recent study by 
 
 # Running simulation
 
-<img src="SEIR without Social Distancing.PNG" class="img-responsive" alt="">
-<img src="SEIR prevalence withou Social Distancing.PNG" class="img-responsive" alt="">
+<p float="left">
+  <img src="SEIR without Social Distancing.PNG" width="100" />
+  <img src="SEIR prevalence withou Social Distancing.PNG" width="100" /> 
+</p>
+
